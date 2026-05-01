@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprentissage du clavier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Apprendre à taper au clavier</h1>
+    </header>
+
+    <main>
+        <section class="game-area">
+            <form class="typing-form">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" name="gameType" id="mots" value="mots" checked>
+                        <label for="mots">Mots</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="gameType" id="phrases" value="phrases">
+                        <label for="phrases">Phrases</label>
+                    </div>
+                </div>
+                <!-- Zone pour le mot/phrase à taper -->
+                <div class="word-display">azerty</div>
+                
+                <!-- Zone de saisie -->
+                <input type="text" class="typing-input" placeholder="Tapez ici..." autocomplete="off">
+                <button type="submit" class="validate-btn">Valider</button>
+            </form>
+        </section>
+
+        <aside class="score-area">
+            <span>Score : <span class="score-value">0</span></span>
+        </aside>
+
+        <!-- Zone pour afficher les messages -->
+        <div class="message-area">
+            <div class="message info">✨ Bienvenue ! Commencez à taper ✨</div>
+        </div>
+    </main>
+<script src="app.js"></script>
+    
+</body>
